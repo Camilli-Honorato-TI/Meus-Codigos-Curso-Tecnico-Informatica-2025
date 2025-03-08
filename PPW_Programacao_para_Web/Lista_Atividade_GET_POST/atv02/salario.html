@@ -1,0 +1,33 @@
+<!-- Desenvolva um programa que leia o nome de um funcionário, seu salário, quantos anos ele
+trabalha na empresa e mostre seu novo salário, reajustado de acordo com a tabela a seguir: - Até
+3 anos de empresa: aumento de 3% - entre 3 e 10 anos: aumento de 12.5% - 10 anos ou mais:
+aumento de 20%.
+Autor: Camilli Vitória Salvaro Honorato
+Data: Março, 2025 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+    <link rel="stylesheet" href="salario.css">
+</head>
+<body>
+    <div class="fundo">
+        <h1>Cálculo de Reajuste Salarial</h1>
+        <form action="salario.php" method="POST">
+            <h4>Nome do Funcionário:</h4>
+            <input type="text" name="nome" placeholder="Digite o nome">
+
+            <h4 >Salário Atual:</h4>
+            <input type="number" name="salario" placeholder="Digite o salário atual">
+
+            <h4 >Tempo de Empresa (em anos):</h4>
+            <input type="number" name="anos" placeholder="Digite os anos de trabalho">
+            
+            <input type="submit" value="Calcular" name="calcular">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(130, 159, 255);
+    color: rgb(130, 159, 255);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.fundo {
+    background-color: #fff;
+    width: 600px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color:rgb(130, 159, 255);
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color:rgb(130, 159, 255)
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(130, 159, 255);
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}

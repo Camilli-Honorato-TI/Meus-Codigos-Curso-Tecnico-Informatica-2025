@@ -1,0 +1,33 @@
+<!-- Escreva um programa para aprovar ou não o empréstimo bancário para a compra de uma
+casa. O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele
+vai pagar. Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do
+salário ou então o empréstimo será negado.
+Autor: Camilli Vitória Salvaro Honorato
+Data: Março, 2025 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprestimo</title>
+    <link rel="stylesheet" href="emprestimo.css">
+</head>
+<body>
+    <div class="fundo">
+        <h1>Empréstimo Bancário</h1>
+        <form action="emprestimo.php" method="POST">
+            <h4>Valor da Casa:</h4>
+            <input type="number" name="valorCasa" placeholder="Digite o valor da casa">
+
+            <h4>Salário do Comprador:</h4>
+            <input type="number" name="salario" placeholder="Digite o salário">
+
+            <h4>Número de Anos para Pagar:</h4>
+            <input type="number" name="anos" placeholder="Digite o número de anos">
+            
+            <input type="submit" value="Calcular" name="calcular">
+        </form>
+    </div>
+</body>
+</html>

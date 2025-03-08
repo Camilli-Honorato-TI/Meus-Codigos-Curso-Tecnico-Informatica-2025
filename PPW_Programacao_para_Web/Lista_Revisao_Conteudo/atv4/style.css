@@ -1,0 +1,49 @@
+img{
+ width: 400px;
+ height: 360px;
+ margin: 12px;
+}
+
+#hiro:hover{
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+    border: 2px solid rgb(50, 97, 124);
+}
+#ichigo:hover{
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+    border: 2px solid rgb(0, 162, 255);
+}
+#two:hover{
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+    border: 2px solid rgb(255, 0, 0);
+}
+#kokoshi:hover{
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+    border: 2px solid rgb(253, 255, 157);
+}
+#zero:hover{
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+    border: 2px solid rgb(255, 125, 186);
+}
+#zero_two:hover{
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+    border: 2px solid rgb(255, 174, 251);
+}
+
+span:hover{
+    transition: ease-in-out 0.3s;
+    color:rgb(0, 119, 255);
+}
+h3{
+    font-size: 50px;
+}
+.titulo{
+    background-color: rgba(163, 0, 0, 0.87);
+    color: white;
+    text-align: center;
+}

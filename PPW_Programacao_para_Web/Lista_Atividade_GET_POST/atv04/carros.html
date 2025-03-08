@@ -1,0 +1,40 @@
+<!-- Uma empresa de aluguel de carros precisa cobrar pelos seus serviços. O aluguel de um carro
+custa R$90 por dia para carro popular e R$150 por dia para carro de luxo. Além disso, o cliente
+paga por km percorrido. Faça um programa que leia o tipo de carro alugado (popular ou luxo),
+quantos dias de aluguel e quantos Km foram percorridos. No final mostre o preço a ser pago de
+acordo com a tabela a seguir: - Carros populares (aluguel de R$90 por dia) - Até 100Km
+percorridos: R$0,20 por Km - Acima de 100Km percorridos: R$0,10 por Km - Carros de luxo (aluguel
+de R$150 por dia) - Até 200 Km percorridos: R$0,30 por Km - Acima de 200Km percorridos: R$0,25
+por Km.
+Autor: Camilli Vitória Salvaro Honorato
+Data: Março, 2025 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Carros</title>
+    <link rel="stylesheet" href="carros.css">
+</head>
+<body>
+    <div class="fundo">
+        <h1>Aluguel de Carro</h1>
+        <form action="carros.php" method="POST">
+            <h4>Tipo de Carro:</h4>
+
+            <select name="carro" >
+                <option value="popular">Popular</option>
+                <option value="luxo">Luxo</option>
+            </select>
+
+            <h4>Número de Dias de Aluguel:</h4>
+            <input type="number" name="dias" placeholder="Digite o número de dias">
+
+            <h4>Quilômetros Percorridos:</h4>
+            <input type="number" name="km" placeholder="Digite a quantidade de km">
+            <input type="submit" value="Calcular Valor" name="calcular">
+        </form>
+    </div>
+</body>
+</html>

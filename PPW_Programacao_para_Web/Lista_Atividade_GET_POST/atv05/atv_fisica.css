@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(255, 130, 27);
+    color: black;
+    padding: 20px;
+}
+
+.fundo {
+    background-color: white;
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(255, 130, 27);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 130, 27);
+    color: white;
+    font-size: 18px;
+    border: none;
+}

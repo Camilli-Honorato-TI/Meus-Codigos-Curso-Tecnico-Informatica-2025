@@ -1,0 +1,45 @@
+body{
+    background-color: green;
+    color: white;
+}
+
+.container{
+margin-left: 70px;
+}
+
+textarea{
+    resize: none;
+    border: none;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.comments{
+    margin-left: 830px;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: black;
+    height: auto;
+    width: 300px;
+    margin-top: -300px;
+    border-radius: 5px;
+}
+#btn{
+    margin-top: 5px;
+    width: 300px;
+    margin-left: 60px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border: white solid 2px;
+    font-size: 16px;
+    border-radius: 5px;
+}
