@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante responsividade para dispositivos móveis -->
+    <title>Conexão BD</title> <!-- Define o título da aba do navegador -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Vincula um arquivo de estilo externo localizado na pasta css -->
+</head>
+<body>
+    <div class="container"> <!-- Div principal para estruturar o conteúdo da página -->
+        <div class="form"> <!-- Div usada para organizar o formulário -->
+
+        <!-- Início do formulário que envia os dados via método POST para cadastro_usuario.php -->
+        <form action="cadastro_usuario.php" method="post">
+            
+            <div class="title"> <!-- Div com o título do formulário -->
+                <h3>Cadastro Usuário</h3> <!-- Título exibido na página -->
+            </div>
+
+            <!-- Recebe login do usuário -->
+            <div class="input-box">            
+                <label for="login">Login:</label> <!-- Rótulo do campo login -->
+                <input type="text" name="login" required> <!-- Campo de entrada do tipo texto obrigatório -->
+            </div>
+
+            <!-- Recebe a senha do usuário -->
+            <div class="input-box">        
+                <label for="senha">Senha:</label> <!-- Rótulo do campo senha -->
+                <input type="password" name="senha" required> <!-- Campo de entrada do tipo senha obrigatório -->
+            </div>
+
+            <div class="form-container"> <!-- Container para os botões de seleção de tipo -->
+                
+                <!-- Recebe o tipo do usuário -->
+                <div class="gender-group">
+                    <h2 for="sexo">Tpo:</h2> <!-- Rótulo para o grupo de botões (obs: erro de digitação em 'Tipo') -->
+            
+                    <div class="gender-input"> <!-- Agrupa os botões de tipo -->
+
+                        <!-- Opção Funcionario -->
+                        <label for="Funcionario">Funcionario</label>
+                        <input type="radio" id="funcionario" name="tipo" value="F" required>
+                        
+                        <!-- Opção Cliente -->
+                        <label for="Cliente">Cliente</label>
+                        <input type="radio" id="cliente" name="tipo" value="C">
+
+                        <!-- Opção Administrador -->
+                        <label for="Administrador">Administrador</label>
+                        <input type="radio" id="adm" name="tipo" value="A">
+                    </div>
+                </div>
+
+            <!-- Botão de envio do formulário -->
+            <input type="submit" value="Enviar" id="btn">
+
+            <!-- Caso o usuário queira voltar a tela 'home' -->
+            <button id='voltar'><a href="../home/home.html">Voltar</a></button>   
+
+            </div> <!-- Fim do container do formulário -->
+        </form> <!-- Fim do formulário -->
+    </div> <!-- Fim da div 'form' -->
+</body>
+</html>

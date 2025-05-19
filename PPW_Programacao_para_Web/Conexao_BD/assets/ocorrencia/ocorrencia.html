@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- Declara que este documento é HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma do documento como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a escala para dispositivos móveis -->
+    <title>Conexão BD</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link para o arquivo externo de estilo CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Container principal que agrupa o conteúdo da página -->
+        <div class="form"> <!-- Div para agrupar o formulário -->
+            <form action="cadastro_ocorrencia.php" method="post"> <!-- Início do formulário que enviará dados via POST para cadastro_ocorrencia.php -->
+                <div class="title"> <!-- Div para o título do formulário -->
+                    <h3>Registro de ocorrência</h3> <!-- Título visível do formulário -->
+                </div>
+
+                <div class="input-box"> <!-- Caixa de entrada para o nome da ocorrência -->
+                    <label for="ocorrencia">Nome da ocorrência:</label> <!-- Rótulo associado ao input 'ocorrencia' -->
+                    <input type="text" name="ocorrencia" id="ocorrencia" required> <!-- Campo texto obrigatório para o nome da ocorrência -->
+                </div>
+
+                <div class="input-box"> <!-- Caixa de entrada para a descrição -->
+                    <label for="descricao">Descrição:</label> <!-- Rótulo para o campo 'descricao' -->
+                    <input type="text" name="descricao" id="descricao" required> <!-- Campo texto obrigatório para a descrição da ocorrência -->
+                </div>
+
+                <div class="input-box"> <!-- Caixa para punição -->
+                    <label for="punicao">Punição:</label> <!-- Rótulo para punição -->
+                    <input type="text" name="punicao" id="punicao" required> <!-- Campo texto obrigatório para punição -->
+                </div>
+
+                <div class="input-box"> <!-- Caixa para tipo da punição -->
+                    <label for="tipo_punicao">Tipo da punição:</label> <!-- Rótulo para tipo da punição -->
+                    <input type="text" name="tipo_punicao" id="tipo_punicao" required> <!-- Campo texto obrigatório para tipo da punição -->
+                </div>
+
+                <div class="input-box"> <!-- Caixa para legislação -->
+                    <label for="legis">Legislação:</label> <!-- Rótulo para legislação -->
+                    <input type="text" name="legis" id="legis" required> <!-- Campo texto obrigatório para legislação -->
+                </div>
+
+                <div class="input-box"> <!-- Caixa para tipo de legislação -->
+                    <label for="tipo_legis">Tipo de Legislação:</label> <!-- Rótulo para tipo de legislação -->
+                    <input type="text" name="tipo_legis" id="tipo_legis" required> <!-- Campo texto obrigatório para tipo de legislação -->
+                </div>
+
+                <div class="input-box"> <!-- Caixa para data de criação -->
+                    <label for="data">Data criação:</label> <!-- Rótulo para data -->
+                    <input type="date" name="data" id="data" required> <!-- Campo obrigatório do tipo data para data de criação -->
+                </div>
+
+                <div class="input-box"> <!-- Caixa para status -->
+                    <label for="status">Status:</label> <!-- Rótulo para status -->
+                    <input type="text" name="status" id="status" required> <!-- Campo texto obrigatório para status -->
+                </div>
+
+                <input type="submit" value="Enviar" id="btn"> <!-- Botão para enviar o formulário -->
+                
+                <!-- Caso o usuário queira voltar a tela 'home' -->
+                <button id='voltar'><a href="../home/home.html">Voltar</a></button>   
+            </form>
+        </div> <!-- Fecha div 'form' -->
+    </div> <!-- Fecha div 'container' -->
+</body>
+</html>

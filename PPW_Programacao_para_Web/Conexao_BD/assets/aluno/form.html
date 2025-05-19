@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a visualização se ajuste a diferentes dispositivos -->
+    <title>Conexão BD</title> <!-- Define o título da aba do navegador -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Vincula um arquivo de estilo externo localizado na pasta css -->
+</head>
+<body>
+    <div class="container"> <!-- Container principal que envolve o formulário -->
+        <div class="form"> <!-- Container específico para o formulário -->
+            <form action="cadastro_aluno.php" method="post"> <!-- Formulário que envia os dados via POST para 'cadastro_aluno.php' -->
+                <div class="title">
+                    <h3>Formulário Conexão Do Banco de Dados</h3> <!-- Título do formulário -->
+                </div>
+
+                <!-- Campo para inserir o nome do aluno -->
+                <div class="input-box">            
+                    <label for="nome">Nome aluno:</label> <!-- Rótulo para o campo nome -->
+                    <input type="text" name="nome" required> <!-- Campo de texto obrigatório para nome -->
+                </div>
+
+                <!-- Campo para inserir o CPF do aluno -->
+                <div class="input-box">        
+                    <label for="cpf">CPF aluno:</label> <!-- Rótulo para o campo CPF -->
+                    <input type="text" name="cpf" required> <!-- Campo de texto obrigatório para CPF -->
+                </div>
+
+                <!-- Campo para inserir a data de nascimento do aluno -->
+                <div class="input-box">
+                    <label for="data_nasc">Data Nascimento do aluno:</label> <!-- Rótulo para data de nascimento -->
+                    <input type="date" name="data_nasc" required> <!-- Campo de data obrigatório -->
+                </div>
+
+                <!-- Campo para inserir o email do aluno -->
+                <div class="input-box">
+                    <label for="email">Email do aluno:</label> <!-- Rótulo para o email -->
+                    <input type="email" name="email" required> <!-- Campo de email obrigatório -->
+                </div>
+
+                <!-- Campo para inserir o telefone do aluno -->
+                <div class="input-box">
+                    <label for="tel">Telefone do aluno:</label> <!-- Rótulo para telefone -->
+                    <input type="text" name="tel" required> <!-- Campo de texto obrigatório para telefone -->
+                </div>
+
+                <!-- Campo para inserir o endereço do aluno -->
+                <div class="input-box">
+                    <label for="endereco">Endereço do aluno:</label> <!-- Rótulo para endereço -->
+                    <input type="text" name="endereco" required> <!-- Campo de texto obrigatório para endereço -->
+                </div>
+
+                <!-- Campo para inserir complemento do endereço do aluno -->
+                <div class="input-box">
+                    <label for="comp">Complento endereço aluno:</label> <!-- Rótulo para complemento -->
+                    <input type="text" name="comp"> <!-- Campo de texto opcional para complemento -->
+                </div>
+
+                <div class="form-container"> <!-- Container para agrupamento dos campos sexo e PCD -->
+
+                    <!-- Grupo de inputs para sexo do aluno -->
+                    <div class="gender-group">
+                        <h2 for="sexo">Sexo do aluno:</h2> <!-- Título para o grupo de sexo -->
+
+                        <div class="gender-input">
+                            <label for="feminino">Feminino</label> <!-- Rótulo para opção feminino -->
+                            <input type="radio" id="feminino" name="genero" value="F" required> <!-- Radio button obrigatório para feminino -->
+                            
+                            <label for="masculino">Masculino</label> <!-- Rótulo para opção masculino -->
+                            <input type="radio" id="masculino" name="genero" value="M"> <!-- Radio button para masculino -->
+                        </div>
+                    </div>
+
+                    <!-- Grupo de inputs para indicar se o aluno é PCD -->
+                    <div class="gender-group">
+                        <h2 for="pcd">Pcd aluno:</h2> <!-- Título para o grupo PCD -->
+
+                        <div class="gender-input">
+                            <label for="sim">Sim</label> <!-- Rótulo para opção sim -->
+                            <input type="radio" id="sim" name="pcd" value="S" required> <!-- Radio button obrigatório para sim -->
+                            
+                            <label for="nao">Não</label> <!-- Rótulo para opção não -->
+                            <input type="radio" id="nao" name="pcd" value="N"> <!-- Radio button para não -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botão para enviar o formulário -->
+                <input type="submit" value="Enviar" id="btn">
+
+                <!-- Caso o usuário queira voltar a tela 'home' -->
+                <button id='voltar'><a href="../home/home.html">Voltar</a></button>   
+            </form>
+        </div>
+    </div>
+</body>
+</html>
