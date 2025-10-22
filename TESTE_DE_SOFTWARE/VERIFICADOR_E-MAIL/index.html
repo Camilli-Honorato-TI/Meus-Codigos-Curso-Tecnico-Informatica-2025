@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Email</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="emailForm" novalidate>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email"
+
+        placeholder="seu@exemplo.com" aria-describedby="help" required>
+        <small id="help">Digite um e-mail no formato usuario@dominio.tld</small>
+        <button type="submit">Verificar</button>
+        <p id="message" class="msg" aria-live="polite"></p>
+    </form>
+
+    <p id="result"></p>
+    <script src="email.js"></script>
+</body>
+</html>

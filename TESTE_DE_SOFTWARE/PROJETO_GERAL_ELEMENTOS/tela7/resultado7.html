@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado Final</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="resultado"></div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search); // Pega o conteudo pela URL
+    const res = Number(params.get("res")).toFixed(2); //Recebe o resultado aceitando 2 casas apos a virgula
+    const acertou = params.get("acertou") === "true"; //Verifica recebe a booleana de acerto
+
+    const resultadoDiv = document.getElementById("resultado"); // Pega a referencia de um determinado lugar
+
+    //Caso acertou exibe o resultado
+    if (acertou) {
+      resultadoDiv.innerHTML = `
+        <h3>Parabéns! Você concluiu todos os desafios! 🎉</h3>
+        <p>Resultado: <b>${res}</b></p>
+        <a href="../final/senha.html"><button class="btn">Receber certificado</button></a>
+      `;
+    } 
+    //Caso errou exibe o resultado
+    else {
+      resultadoDiv.innerHTML = `
+        <h3>Resposta incorreta. 😢</h3>
+        <p>Seu resultado foi: <b>${res}</b></p>
+        <a href="pag7.html"><button class="btn">Tentar Novamente</button></a>
+      `;
+    }
+  </script>
+</body>
+</html>
